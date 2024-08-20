@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "anton", sans-serif;
+    background-color: white;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: gray);
+    border-top: thin;
+    border-style: solid;
+    border-color: white;
+    color: rgb(245, 29, 72);
+    align-items: center;
+}   
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+#links a {
+    text-decoration: none;
+    color: crimson;
+    font-size: 1.2rem;
+    border-bottom: 3px solid transparent;
+    border-radius: 6px;
+    transition: 0.5s ease-in-out;
+}
+#links a:hover {
+    border-bottom: 3px solid rgb(8, 6, 6);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+#main{
+    width: 70%;
+    background-color: white;
+    margin: 5px auto;
+    padding: 5px;
+    color:black;
+    border-radius: 12px;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+form fieldset{
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form legend{
+    padding: 0 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form button{
+    cursor: pointer;
+    background-color:crimson;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button:hover{
+    background-color: crimson;
+}
