@@ -3,29 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "anton", sans-serif;
-    background-color: white;
+    background-color: black;
+    align-items: center;
 }
+
 header {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
     height: 150px;
     border-radius: 10px;
-    background-color: gray);
+    background-color: black;
     border-top: thin;
     border-style: solid;
-    border-color: white;
-    color: rgb(245, 29, 72);
+    border-color: rgb(46, 43, 43);
+    color: rgb(58, 55, 55);
     align-items: center;
-}   
+}
+
+#logo-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+}
 
 #links {
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
+
 #links a {
     text-decoration: none;
     color: crimson;
@@ -34,20 +44,75 @@ header {
     border-radius: 6px;
     transition: 0.5s ease-in-out;
 }
+
 #links a:hover {
     border-bottom: 3px solid rgb(8, 6, 6);
-    color: rgb(0, 0, 0);
+    color: white;
     transform: scale(1.1);
 }
-#main{
-    width: 70%;
-    background-color: white;
-    margin: 5px auto;
-    padding: 5px;
-    color:black;
-    border-radius: 12px;
-}
+
 main {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.titulo {
+    color: crimson;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.agentes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.agentes {
+    color: white;
+    padding: 20px;
+    width: calc(20% - 20px);
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.agentes img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.agentes img:hover {
+    transform: scale(1.1);
+}
+
+.agentes h2 {
+    color: white;
+    text-align: center;
+}
+
+.agentes p {
+    text-align: justify;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+footer a {
+    color: crimson;
+    text-decoration: none;
+
 }

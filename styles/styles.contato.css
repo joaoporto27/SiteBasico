@@ -3,29 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "anton", sans-serif;
-    background-color: white;
+    background-color: black;
 }
+
 header {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
     height: 150px;
     border-radius: 10px;
-    background-color: gray);
+    background-color: black;
     border-top: thin;
     border-style: solid;
-    border-color: white;
-    color: rgb(245, 29, 72);
+    border-color: rgb(46, 43, 43);
+    color: rgb(58, 55, 55);
     align-items: center;
-}   
+}
+
+#logo-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+}
 
 #links {
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
+
 #links a {
     text-decoration: none;
     color: crimson;
@@ -34,70 +43,86 @@ header {
     border-radius: 6px;
     transition: 0.5s ease-in-out;
 }
+
 #links a:hover {
     border-bottom: 3px solid rgb(8, 6, 6);
-    color: rgb(0, 0, 0);
+    color: white;
     transform: scale(1.1);
 }
-#main{
-    width: 70%;
-    background-color: white;
-    margin: 5px auto;
-    padding: 5px;
-    color:black;
-    border-radius: 12px;
+
+h1 {
+    text-align: center;
+    color: white;
+
 }
-main {
-    display: flex;
-    justify-content: space-around;
-}
-form{
-    align-items: center;
+
+form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: black;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-family: "Bangers", sans-serif;
 }
 
-form fieldset{
-    border: 1px solid #ddd;
+form fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.815);
     padding: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-form label{
+form label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: rgb(255, 255, 255);
 }
 
-form legend{
+form legend {
     padding: 0 10px;
     font-weight: bold;
-    color: #333;
+    color: crimson;
 }
 
 form input[type="text"],
 form input[type="email"],
-form textarea{
+form select,
+form textarea {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
 }
-form button{
+
+form input[type="radio"] form input[type="checkbox"] form button {
     cursor: pointer;
-    background-color:crimson;
-    color: #fff;
+    background-color: black;
+    color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 16px;
 }
 
-form button:hover{
+form button:hover {
     background-color: crimson;
+}
+
+footer {
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 250px;
+}
+
+footer a {
+    color: crimson;
+    text-decoration: none;
+
 }

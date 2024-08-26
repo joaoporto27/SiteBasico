@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.index.css">
-    <title>Site Básico</title>
+    <link rel="stylesheet" href="styles/styles.contato.css">
+    <title>Contato</title>
 </head>
+
 <body>
     <header>
-        
+        <div id="logo">
+            <img id="logo-img" src="styles/images/logo.png" alt="Logo do jogo Valorant">
+        </div>
         <div id="links">
             <a href="index.html">Home</a>
             <a href="sobre.html">Sobre</a>
@@ -16,20 +20,37 @@
         </div>
     </header>
     <main>
-            <h1>Contato</h1>
-            <form>
-            <fieldset>
-            <legend>Fale conosco</legend>
+        <div id="main-Sobre">
+            <h1>Contate-nos</h1>
+
+        </div>
+    </main>
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required maxlength="100">
+
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="seuemail@seuemail.com" required>
-            <label for="descricao">Descrição:</label>
-            <textarea name="descricao" id="descricao" rows="5" placeholder="Deixe sua mensagem!" required></textarea>
-            <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
-    </main>
+            <input type="text" id="email" name="nome" placeholder="Seuemail@seuemail.com" required>
+
+            <label for="data-de-nascimento">Data de nascimento:</label>
+            <input type="date" id="data-de-nascimento" name="data-de-nascimento" placeholder="Digite sua idade" min="18"
+                max="100">
+
+        </fieldset>
+
+        <label for="descricao">Descrição:</label>
+        <textarea name="descricao" id="descricao" rows="5" placeholder="Deixe sua mensagem!" required></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <footer>
+        <h4>Site desenvolvido por: <a
+                href="https://www.linkedin.com/in/jo%C3%A3o-vitor-porto-sales-18bb202b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">João
+                Vitor Porto Sales</a></h4>
+    </footer>
 </body>
 
 </html>

@@ -3,29 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "anton", sans-serif;
-    background-color: white;
+    background-color: black;
 }
+
 header {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
     height: 150px;
     border-radius: 10px;
-    background-color: gray);
+    background-color: black;
     border-top: thin;
     border-style: solid;
-    border-color: white;
-    color: rgb(245, 29, 72);
+    border-color: rgb(46, 43, 43);
+    color: crimson;
     align-items: center;
-}   
+}
+
+#logo-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+}
 
 #links {
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
+
 #links a {
     text-decoration: none;
     color: crimson;
@@ -34,20 +43,44 @@ header {
     border-radius: 6px;
     transition: 0.5s ease-in-out;
 }
+
 #links a:hover {
     border-bottom: 3px solid rgb(8, 6, 6);
-    color: rgb(0, 0, 0);
+    color: white;
     transform: scale(1.1);
 }
-#main{
+
+#main {
     width: 70%;
-    background-color: white;
+    background-color: black;
     margin: 5px auto;
     padding: 5px;
-    color:black;
+    color: white;
     border-radius: 12px;
 }
+
 main {
     display: flex;
     justify-content: space-around;
+}
+
+main h1 {
+    color: crimson;
+}
+
+footer {
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 500px;
+}
+
+footer a {
+    color: crimson;
+    text-decoration: none;
+
 }
